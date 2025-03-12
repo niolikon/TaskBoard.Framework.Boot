@@ -1,0 +1,36 @@
+server:
+  port: 0
+
+logging:
+  level:
+    com.niolikon.taskboard.framework.test.containers: INFO
+
+spring:
+  application:
+    name: TaskBoard.Framework.Boot
+
+  main:
+    allow-bean-definition-overriding: true
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://fake-issuer
+          jwk-set-uri: http://fake-issuer/certs
+
+taskboard:
+  exceptions:
+    handler:
+      enabled: true
+
+  security:
+    keycloak:
+      auth-server-url: ${KEYCLOAK_REALM_URI:http://localhost:8081/}
+      realm: TodoRealm
+      client-id: my-client
