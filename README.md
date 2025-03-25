@@ -143,7 +143,7 @@ Since this is a **library**, it is meant to be included in your Maven projects a
 <dependency>
    <groupId>com.github.niolikon</groupId>
    <artifactId>TaskBoard.Framework.Boot</artifactId>
-   <version>0.0.1</version>
+   <version>0.0.2</version>
 </dependency>
 ```
 
