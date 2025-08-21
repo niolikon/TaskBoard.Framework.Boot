@@ -1,7 +1,7 @@
 # TaskBoard.Framework.Boot
 
-[![Build Workflow](https://github.com/niolikon/TaskBoard.Framework.Boot/actions/workflows/maven.yml/badge.svg)](https://github.com/niolikon/TaskBoard.Framework.Boot/actions)
-[![Release Workflow](https://github.com/niolikon/TaskBoard.Framework.Boot/actions/workflows/release-maven.yml/badge.svg)](https://github.com/niolikon/TaskBoard.Framework.Boot/actions)
+[![Build Workflow](https://github.com/niolikon/TaskBoard.Framework.Boot/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/niolikon/TaskBoard.Framework.Boot/actions)
+[![Release Workflow](https://github.com/niolikon/TaskBoard.Framework.Boot/actions/workflows/publish-release.yml/badge.svg)](https://github.com/niolikon/TaskBoard.Framework.Boot/actions)
 [![JitPack](https://jitpack.io/v/niolikon/TaskBoard.Framework.Boot.svg)](https://jitpack.io/#niolikon/TaskBoard.Framework.Boot)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
