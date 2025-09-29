@@ -10,7 +10,7 @@
   <groupId>com.github.niolikon</groupId>
   <artifactId>taskboard-framework-boot</artifactId>
   <packaging>jar</packaging>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <name>TaskBoard.Framework.Boot</name>
   <description>Task Board Framework and Common components (Spring Case Study)</description>
   <url>https://github.com/niolikon/TaskBoard.Service.Boot</url>
