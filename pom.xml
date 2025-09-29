@@ -40,6 +40,7 @@
     <org.projectlombok.version>1.18.30</org.projectlombok.version>
     <org.testcontainers.version>1.20.6</org.testcontainers.version>
     <org.testcontainers.keycloak.version>3.4.0</org.testcontainers.keycloak.version>
+    <org.testcontainers.mongo.version>1.21.3</org.testcontainers.mongo.version>
   </properties>
   <dependencies>
     <dependency>
@@ -60,6 +61,11 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-mongodb</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -134,6 +140,12 @@
       <groupId>com.github.dasniko</groupId>
       <artifactId>testcontainers-keycloak</artifactId>
       <version>${org.testcontainers.keycloak.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>mongodb</artifactId>
+      <version>${org.testcontainers.mongo.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>

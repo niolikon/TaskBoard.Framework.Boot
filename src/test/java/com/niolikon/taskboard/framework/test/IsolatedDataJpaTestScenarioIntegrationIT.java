@@ -28,7 +28,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 @ContextConfiguration(classes = {FakeAppTestDataJpaConfig.class, PostgreSQLTestContainersConfig.class})
 @ExtendWith(IsolatedDataJpaTestScenarioExtension.class)
-class IsolatedTestScenarioIntegrationIT {
+class IsolatedDataJpaTestScenarioIntegrationIT {
 
     @Autowired
     private StudentRepository studentRepository;
