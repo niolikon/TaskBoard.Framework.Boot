@@ -14,17 +14,12 @@ import org.testcontainers.containers.MongoDBContainer;
 @Log
 public class MongoTestContainersConfig {
 
-    // Versione recente e stabile di Mongo
     private static final MongoDBContainer MONGO = new MongoDBContainer("mongo:7");
 
     static {
         MONGO.start();
     }
 
-    /**
-     * Connection string base dal container. Aggiungo esplicitamente un DB name "testdb".
-     * In alternativa puoi usare MONGO.getReplicaSetUrl("testdb") se preferisci la replica set.
-     */
     @Bean
     @Primary
     public MongoClient mongoClient() {
