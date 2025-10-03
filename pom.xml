@@ -10,7 +10,7 @@
   <groupId>com.github.niolikon</groupId>
   <artifactId>taskboard-framework-boot</artifactId>
   <packaging>jar</packaging>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <name>TaskBoard.Framework.Boot</name>
   <description>Task Board Framework and Common components (Spring Case Study)</description>
   <url>https://github.com/niolikon/TaskBoard.Service.Boot</url>
@@ -40,6 +40,7 @@
     <org.projectlombok.version>1.18.30</org.projectlombok.version>
     <org.testcontainers.version>1.20.6</org.testcontainers.version>
     <org.testcontainers.keycloak.version>3.4.0</org.testcontainers.keycloak.version>
+    <org.testcontainers.mongo.version>1.21.3</org.testcontainers.mongo.version>
   </properties>
   <dependencies>
     <dependency>
@@ -60,6 +61,11 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-mongodb</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -134,6 +140,12 @@
       <groupId>com.github.dasniko</groupId>
       <artifactId>testcontainers-keycloak</artifactId>
       <version>${org.testcontainers.keycloak.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>mongodb</artifactId>
+      <version>${org.testcontainers.mongo.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
